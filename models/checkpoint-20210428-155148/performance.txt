@@ -1,0 +1,11 @@
+Skinny model trained on ECU($train split), same as the paper
+
+
+		F1	IOU	PREC	RCLL
+ecu($test): 	.9133	.9677	.9192	.9184	
+hgr: 		.9309	.9794	.9561	.9229
+vdm(test): 	.2783	.9808	.4223	.2811
+pratheepan:	.7863	.9510	.8689	.7628
+uchile:		.5846	.9502	.7130	.5404
+abd(test):	.6523	.7573	.8903	.5807
+
