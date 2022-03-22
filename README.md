@@ -13,7 +13,7 @@ https://github.com/ttarasiewicz/Skinny
 
 
 <a name="Outcomes"></a>
-### Outcomes
+## Outcomes
 
 
 ![Outcomes](docs/outcomes.png "Outcomes")
@@ -38,7 +38,7 @@ An in-depth analysis of outcomes can be seen in the thesis.
 
 
 <a name="Performance"></a>
-### Performance
+## Performance
 
 
 Apart from the Validation process, which uses the original paper methodologies, the metrics are calculated as follows.  
@@ -107,7 +107,7 @@ The methodology is the same as of 'Performance across databases', but skin tones
 
 
 <a name="Skin-Detection-Algorithm"></a>
-### Network Architecture
+## Network Architecture
 
 
 
@@ -127,23 +127,8 @@ and after concatenating features, in the expanding path.
 Thanks to these architectural choices, Skinny benefits from a wider pixel context.
 
 
-<a name="Setup"></a>
-### Setup
-
-
-Things to Note:  
-The notebook has only been used in Google Colab, so it may need some modifications to use locally.  
-Pre-defined splits can be found in the folders of provided models.
-
-1. Zip datasets without adding any intermediate folder and upload them into Google Drive
-2. Upload any pre-trained model into Google Drive
-3. Change paths of models and datasets in the [Settings](#Settings) section  
-4. Change paths of pre-defined splits in the [Generate Datasets CSV Metadata](#Generate-Datasets-CSV-Metadata) section 
-5. To use the skin detector, run all code till the [Use Skin Detector](#Use-Skin-Detector) section and change final settings, which are the few first lines of each function of the skin detector  
-
-
 <a name="Public-Datasets-Supported"></a>
-### Public Datasets Supported
+## Public Datasets Supported
 
 
 [ecu]: https://documents.uow.edu.au/~phung/download.html "ECU download page"
