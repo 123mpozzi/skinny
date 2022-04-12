@@ -1,8 +1,15 @@
-<a name="Introduction"></a>
+[ecu]: https://documents.uow.edu.au/~phung/download.html "ECU download page"
+[hgr]: http://sun.aei.polsl.pl/~mkawulok/gestures/ "HGR download page"
+[schmugge]: https://www.researchgate.net/publication/257620282_skin_image_Data_set_with_ground_truth "Schmugge download page"
+[pratheepan]: http://cs-chan.com/downloads_skin_dataset.html "Pratheepan download page"
+[abd]: https://github.com/MRE-Lab-UMD/abd-skin-segmentation "abd-skin download page"
+[vpu]: http://www-vpu.eps.uam.es/publications/SkinDetDM/#dataset "VPU download page"
+[uchile]: http://web.archive.org/web/20070707151628/http://agami.die.uchile.cl/skindiff/ "UChile download page"
+
+[thesis]: https://github.com/123mpozzi/skin-detection-thesis "Human Skin Detection In Color Images"
 # Skinny
-
-
 Detecting human skin using a U-Net.  
+This work is part of my [Bachelor thesis][thesis].
 
 #### Original Paper
 T. Tarasiewicz, J. Nalepa, and M. Kawulok. “Skinny: A Lightweight U-net for Skin Detection and Segmentation”. In: 2020 IEEE International Conference on Image Processing (ICIP). IEEE. 2020, pp. 2386–2390. https://doi.org/10.1109/ICIP40778.2020.9191209.
@@ -12,16 +19,17 @@ Credits to the authors of the original version:
 https://github.com/ttarasiewicz/Skinny
 
 
-<a name="Outcomes"></a>
 ## Outcomes
 
-
-![Outcomes](docs/outcomes.png "Outcomes")
-> Significant outcomes: (a) the input image; (b) the ground truth; (c) Skinny's binarized prediction.  
-Predictions have different dimensions than other images due to the network preprocessing.  
-Input images are from ECU, HGR, and Schmugge datasets.
-Various models have been used to detect skin pixels.
-
+<div align="center">
+    <img src="docs/outcomes.png" alt="Outcomes" title="Outcomes">
+    <br>
+    Significant outcomes: (a) the input image; (b) the ground truth; (c) Skinny's binarized prediction.<br>
+    Predictions have different dimensions than other images due to the network preprocessing.<br>
+    Input images are from ECU, HGR, and Schmugge datasets.
+    Various models have been used to detect skin pixels.
+</div>
+<br>
 
 These are some significant outcomes (so not representative; for the skin detector performance see [Performance](#Performance))
 that shows how well the skin detector performs given the right training dataset,
@@ -106,13 +114,15 @@ The methodology is the same as of 'Performance across databases', but skin tones
 | F<sub>1</sub> - IoU ↓ | 0.1021 | 0.0986 | 0.0961 | 0.0690 | 0.1164 | 0.0524 |
 
 
-<a name="Skin-Detection-Algorithm"></a>
 ## Network Architecture
 
-
-
-![Skinny Architecture](docs/skinny_architecture.png "Skinny Architecture")
-> The architecture of Skinny. Adapted from the original paper (Tarasiewicz et al. 2020) 
+<br/>
+<div align="center">
+  <img width="600" src="docs/skinny_architecture.png" alt="Skinny architecture" title="Skinny architecture">
+  <br>
+  The architecture of Skinny. Adapted from the original paper (Tarasiewicz et al. 2020)
+</div>
+<br>
 
 The Skinny network consists of a modified U-Net incorporating dense
 blocks and inception modules to benefit from a wider spatial context.  
@@ -127,17 +137,7 @@ and after concatenating features, in the expanding path.
 Thanks to these architectural choices, Skinny benefits from a wider pixel context.
 
 
-<a name="Public-Datasets-Supported"></a>
 ## Public Datasets Supported
-
-
-[ecu]: https://documents.uow.edu.au/~phung/download.html "ECU download page"
-[hgr]: http://sun.aei.polsl.pl/~mkawulok/gestures/ "HGR download page"
-[schmugge]: https://www.researchgate.net/publication/257620282_skin_image_Data_set_with_ground_truth "Schmugge download page"
-[pratheepan]: http://cs-chan.com/downloads_skin_dataset.html "Pratheepan download page"
-[abd]: https://github.com/MRE-Lab-UMD/abd-skin-segmentation "abd-skin download page"
-[vpu]: http://www-vpu.eps.uam.es/publications/SkinDetDM/#dataset "VPU download page"
-[uchile]: http://web.archive.org/web/20070707151628/http://agami.die.uchile.cl/skindiff/ "UChile download page"
 
 | Name            |  Description                                               | Download |
 | ---:            | :---:                                                      | :---: |
